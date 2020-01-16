@@ -2,7 +2,7 @@ FROM ibmjava:8-sdk
 
 # CMD ["gradle"]
 
-RUN apt-get install git
+RUN apt-get update && apt-get install --yes --no-install-recommends git
 RUN git clone https://github.com/dipendub/distledger.git
 
 RUN set -o errexit -o nounset \
