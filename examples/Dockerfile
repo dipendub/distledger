@@ -23,7 +23,7 @@ RUN set -o errexit -o nounset \
     && unzip gradle.zip \
     && rm gradle.zip \
     && mv gradle-4.4 /opt/gradle/ \
-    && ln --symbolic /opt/gradle/bin/gradle /usr/bin/gradle \
+    && ln --symbolic /opt/gradle/bin/gradle /usr/bin/gradle
 
 #    && gradle --version
 
