@@ -16,6 +16,8 @@ VOLUME /home/gradle/.gradle
 
 WORKDIR /home/gradle
 
+RUN apt-get install unzip
+
 RUN set -o errexit -o nounset \
     && wget --no-verbose --output-document=gradle.zip "https://services.gradle.org/distributions/gradle-4.4-bin.zip" \
     && unzip gradle.zip \
