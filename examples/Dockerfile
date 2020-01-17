@@ -31,4 +31,5 @@ WORKDIR /distledger
 
 ENV JAVA_OPTS=""
 ENV WALLET="-PappArgs=sync --wallet=/distledger/random.wallet --net=TEST --mode=SPV --chain=/distledger/random.chain"
-ENTRYPOINT [ "sh", "-c", "gradle wallet_tool $WALLET" ]
+# ENTRYPOINT [ "sh", "-c", "gradle wallet_tool $WALLET" ]
+ENTRYPOINT [ "sh", "-c", "gradle --version" ]
