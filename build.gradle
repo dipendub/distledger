@@ -1,22 +1,22 @@
 buildscript {
     repositories {
-    //    jcenter()
-          maven {
-                url "https://plugins.gradle.org/m2/"
-         }
+        jcenter()
+    //      maven {
+    //            url "https://plugins.gradle.org/m2/"
+    //     }
     }
 
-    dependencies {
+    //dependencies {
         //classpath 'com.google.protobuf:protobuf-gradle-plugin:0.8.6'
-        classpath 'gradle.plugin.com.google.protobuf:protobuf-gradle-plugin:0.8.6'
-        classpath 'gradle.plugin.com.digithurst:gradle-truststore-plugin:1.1.0'
-    }
+        //classpath 'gradle.plugin.com.google.protobuf:protobuf-gradle-plugin:0.8.6'
+        //classpath 'gradle.plugin.com.digithurst:gradle-truststore-plugin:1.1.0'
+    //}
 }
 
 allprojects {
     repositories {
-    //    jcenter()
-          mavenCentral()
+        jcenter()
+    //      mavenCentral()
     }
 
     group = 'org.bitcoinj'
