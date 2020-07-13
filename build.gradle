@@ -12,8 +12,8 @@ buildscript {
         classpath 'gradle.plugin.com.digithurst:gradle-truststore-plugin:1.1.0'
     }
 
-    System.setProperty('javax.net.ssl.trustStore', 'distledger.jks')
-    System.setProperty('javax.net.ssl.trustStorePassword', 'Wipro@123')
+    //System.setProperty('javax.net.ssl.trustStore', 'distledger.jks')
+    //System.setProperty('javax.net.ssl.trustStorePassword', 'Wipro 123')
 
 }
 
